@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section className="py-16 bg-[#003366] text-white">
+    <section className="py-16 bg-[#003366] text-white" id="contact">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
@@ -20,30 +20,30 @@ const Contact = () => {
               <CardTitle className="text-white">Call Us</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-blue-100 mb-4">
-                Available 7 days a week for emergencies
-              </p>
-              <Button className="bg-white text-[#003366] hover:bg-gray-100">
-                (256) 555-LICE
-              </Button>
+              <p className="text-blue-100 mb-4">Available 7 days a week</p>
+              <a href="tel:+12563444677">
+                <Button className="bg-white text-[#003366] hover:bg-gray-100">
+                  (256) 344-4677
+                </Button>
+              </a>
             </CardContent>
           </Card>
-          
+
           <Card className="bg-white/10 border-white/20">
             <CardHeader className="text-center">
               <div className="text-4xl mb-2">✉️</div>
               <CardTitle className="text-white">Email Us</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-blue-100 mb-4">
-                Quick response within 2 hours
-              </p>
-              <Button className="bg-white text-[#003366] hover:bg-gray-100">
-                hello@lessnlice.com
-              </Button>
+              <p className="text-blue-100 mb-4">Quick response within 2 hours</p>
+              <a href="mailto:lessnlicealabama@gmail.com">
+                <Button className="bg-white text-[#003366] hover:bg-gray-100">
+                  lessnlicealabama@gmail.com
+                </Button>
+              </a>
             </CardContent>
           </Card>
-          
+
           <Card className="bg-white/10 border-white/20">
             <CardHeader className="text-center">
               <div className="text-4xl mb-2">📍</div>
@@ -59,14 +59,16 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
-        
+
         <div className="text-center mt-12">
-          <Button 
-            size="lg" 
-            className="bg-[#006d77] hover:bg-[#005a63] px-8 py-4 text-lg"
-          >
-            Book Your Head Check Now
-          </Button>
+          <a href="#top">
+            <Button
+              size="lg"
+              className="bg-[#006d77] hover:bg-[#005a63] px-8 py-4 text-lg"
+            >
+              Book Your Head Check Now
+            </Button>
+          </a>
         </div>
       </div>
     </section>
