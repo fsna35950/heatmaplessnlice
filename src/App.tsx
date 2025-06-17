@@ -1,8 +1,8 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipProvider } from "@/cnts/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { ThemeProvider } from "@/components/theme-provider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -20,9 +20,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:postId" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
-        <Route path="/blog" element={<BlogList />} />
-<Route path="/blog/:postId" element={<BlogPost />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
