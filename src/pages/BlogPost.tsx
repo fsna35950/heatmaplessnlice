@@ -2,18 +2,18 @@ import { useParams } from "react-router-dom";
 
 const posts = [
   {
-    id: “1”,
-    title: “Don’t Burn the Couch: A Parent’s Guide to Not Panicking”,
+    id: "1",
+    title: "Don’t Burn the Couch: A Parent’s Guide to Not Panicking",
     content: `Spoiler alert: Your furniture is safe. Learn why lice prefer heads to household items and how to keep your sanity intact.`,
   },
   {
     id: “2”,
-    title: “Lice Myths Busted: What Really Works”,
+    title: "Lice Myths Busted: What Really Works",
     content: `Mayo? Olive oil? Essential oils? We separate fact from fiction in the world of DIY lice treatments.`,
   },
   {
     id: “3”,
-    title: “Back to School: Prevention Tips That Actually Work”,
+    title: "Back to School: Prevention Tips That Actually Work",
     content: `Simple, practical advice to reduce your child’s risk without turning them into a hermit.`,
   },
 ];
