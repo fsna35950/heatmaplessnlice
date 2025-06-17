@@ -1,34 +1,42 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const posts = [
   {
-    id: "why-head-checks-matter",
-    title: "Why Regular Head Checks Matter",
-    excerpt: "Learn why early lice detection can save you hours of stress...",
+    id: 'dont-burn-the-couch',
+    title: "Don't Burn the Couch: A Parent's Guide to Not Panicking",
+    excerpt: 'Spoiler alert: Your furniture is safe. Learn why lice prefer heads...',
   },
   {
-    id: "home-lice-removal-steps",
-    title: "Steps to a Successful Home Lice Removal",
-    excerpt: "We break down an easy step-by-step method for safe, effective removal...",
+    id: 'lice-myths-busted',
+    title: 'Lice Myths Busted: What Really Works',
+    excerpt: 'Mayo? Olive oil? Essential oils? We separate fact from fiction...',
+  },
+  {
+    id: 'back-to-school-prevention',
+    title: 'Back to School: Prevention Tips That Actually Work',
+    excerpt: 'Simple, practical advice to reduce your child’s risk...',
   },
 ];
 
 export default function BlogList() {
   return (
-    <section className="p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Our Blog</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id} className="mb-6 border-b pb-4">
-            <Link to={`/blog/${post.id}`}>
-              <h2 className="text-2xl font-semibold text-blue-800 hover:underline">
-                {post.title}
-              </h2>
+    <section className="container mx-auto py-16 px-4">
+      <h2 className="text-3xl font-bold mb-8">Latest from Our Blog</h2>
+      <div className="grid sm:grid-cols-3 gap-8">
+        {posts.map(({ id, title, excerpt }) => (
+          <div key={id} className="p-6 bg-white shadow rounded">
+            <h3 className="font-semibold text-xl mb-2">{title}</h3>
+            <p className="mb-4 text-gray-700">{excerpt}</p>
+            <Link to={`/blog/${id}`}>
+              <Button variant="outline" size="sm">Read More</Button>
             </Link>
-            <p className="text-gray-700">{post.excerpt}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
+  );
+}
   );
 }
