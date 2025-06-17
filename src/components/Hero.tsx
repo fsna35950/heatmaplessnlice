@@ -22,13 +22,13 @@ const Hero = () => {
        </a>
         <a href="tel:+12563444677">
           <Button 
-         </a>
             variant="outline" 
             size="lg" 
             className="border-white text-white hover:bg-white hover:text-[#003366] px-8 py-4 text-lg"
           >
             Call Now: (256) 344-4677
           </Button>
+        </a>
         </div>
       </div>
     </section>
