@@ -12,18 +12,22 @@ const Hero = () => {
           We come to you, so you don't have to worry.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
+        <a href="#contact">
+          <Button
             size="lg" 
             className="bg-white text-[#003366] hover:bg-gray-100 font-semibold px-8 py-4 text-lg"
           >
             Book a Head Check
           </Button>
+       </a>
+        <a href="tel:+12563444677">
           <Button 
+         </a>
             variant="outline" 
             size="lg" 
             className="border-white text-white hover:bg-white hover:text-[#003366] px-8 py-4 text-lg"
           >
-            Call Now: (256) 555-LICE
+            Call Now: (256) 344-4677
           </Button>
         </div>
       </div>
