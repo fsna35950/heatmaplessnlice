@@ -33,7 +33,8 @@ export default function BlogList() {
               <Button variant="outline" size="sm">Read More</Button>
             </Link>
           </div>
-        ))}
+    );    
+    })}
       </div>
     </section>
   );
